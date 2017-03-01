@@ -10,6 +10,6 @@ export class AppComponent {
   title = 'Hello!';
 
   onButtonClick() {
-        this.title = 'Hello from Kendo UI!';
+        this.title = 'Hello from Kendo UI, CLI!';
     }
 }
