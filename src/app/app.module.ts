@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { PortfolioComponent } from './portfolio.component';
 import { GrafikonComponent } from './grafikon.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { TabStripModule } from '@progress/kendo-angular-layout';
 
 const routes: Routes = [
     { path: '', component: PortfolioComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     FormsModule,
     HttpModule,
-    ButtonsModule
+    ButtonsModule,
+    TabStripModule
   ],
   providers: [],
   bootstrap: [AppComponent]

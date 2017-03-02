@@ -1,4 +1,5 @@
 export class Portfolio {
 
-    constructor(public security:string, public ISIN:string, public position:number,public closePrice:number,public livePrice:number) { }
+    constructor(public security: string, public ISIN: string, public position: number,
+    public closePrice: number, public livePrice: number) { }
 }

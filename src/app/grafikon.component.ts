@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 
 @Component({
-    selector: 'my-grafikon',
     template: `<h1>{{title}}</h1>
     <button kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI Button</button>`
 })
