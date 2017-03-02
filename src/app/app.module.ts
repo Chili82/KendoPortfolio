@@ -9,6 +9,9 @@ import { PortfolioComponent } from './portfolio.component';
 import { GrafikonComponent } from './grafikon.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { TabStripModule } from '@progress/kendo-angular-layout';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+
+import 'hammerjs';
 
 const routes: Routes = [
     { path: '', component: PortfolioComponent },
@@ -27,7 +30,8 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     ButtonsModule,
-    TabStripModule
+    TabStripModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
