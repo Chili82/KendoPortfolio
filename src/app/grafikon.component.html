@@ -1,9 +1,9 @@
-<h1>{{title}}</h1>
-    <div style="width:100%">
-    <kendo-tabstrip>
-        <kendo-tabstrip-tab [title]="'Tab 1 Title'" [selected]="true">
-          <template kendoTabContent>
-            <kendo-chart [categoryAxis]="{ categories: categories }">
+ <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class='panel-heading'>Portfolio Graph</div>
+    <div class='panel-body'>
+<div class="graphPanel"> 
+     <kendo-chart [categoryAxis]="{ categories: categories }">
             <kendo-chart-title text="Gross domestic product growth /GDP annual %/"></kendo-chart-title>
             <kendo-chart-legend position="bottom" orientation="horizontal"></kendo-chart-legend>
             <kendo-chart-tooltip format="{0}%"></kendo-chart-tooltip>
@@ -13,6 +13,12 @@
                 </kendo-chart-series-item>
             </kendo-chart-series>
         </kendo-chart>
+</div>
+    <div style="width:100%;clear:both">
+    <kendo-tabstrip>
+        <kendo-tabstrip-tab [title]="'Tab 1 Title'" [selected]="true">
+          <template kendoTabContent>
+       <p>Tab 1 Content</p>
           </template>
         </kendo-tabstrip-tab>
         <kendo-tabstrip-tab [title]="'Tab 2 Title'">
@@ -27,4 +33,5 @@
         </kendo-tabstrip-tab>
       </kendo-tabstrip>
       </div>
-    <button kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI Button</button>
+    </div>
+ </div>
