@@ -1,23 +1,5 @@
 webpackJsonp([1,4],{
 
-/***/ 1274:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(418)();
-// imports
-
-
-// module
-exports.push([module.i, "", ""]);
-
-// exports
-
-
-/*** EXPORTS FROM exports-loader ***/
-module.exports = module.exports.toString();
-
-/***/ }),
-
 /***/ 1277:
 /***/ (function(module, exports) {
 
@@ -106,7 +88,7 @@ var AppComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["d" /* Component */])({
             selector: 'app-root',
             template: __webpack_require__(1277),
-            styles: [__webpack_require__(1274)]
+            styles: [__webpack_require__(1274)],
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
