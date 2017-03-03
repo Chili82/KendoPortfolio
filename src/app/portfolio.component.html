@@ -1,11 +1,13 @@
-<div class="form-group">
+
+    <div class="panel panel-default" style="float: left">
+    <!-- Default panel contents -->
+    <div class='panel-heading'>Portfolio List
+    <div class="form-group">
          <label><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
          <input placeholder="Search Security"  type="text" (keyup)="FilterBySecurity()"  id="inputName" [(ngModel)]="inputName"/>
 
    </div>
-    <div class="panel panel-default">
-    <!-- Default panel contents -->
-    <div class='panel-heading'>Portfolio List</div>
+   </div>
     <div class='panel-body'>
         <table class="table table-bordered table-condensed ">
             <thead>
@@ -30,6 +32,36 @@
             </tbody>
          </table>
          </div>
+         </div>
+
+         <div class="rightPanel">
+            <div class="stat">
+              <div class="example-subtitle">
+                  Eq-Nexanas Stock Price
+                  <span class="metric">US dollars</span>
+              </div>
+              <div class="eo-closing">198.08</div>
+            </div>
+            <div class="cmp-trend">
+               <div class="trend-container">
+                  <div class="example-subtitle">
+                      Highest Price 
+                  </div>
+              <div class="eo-highest">200.50<span class="glyphicon glyphicon-arrow-up"></span></div>
+            </div>
+            <div class="trend-container">
+                  <div class="example-subtitle">
+                      Lowest Price
+                  </div>
+              <div class="eo-lowest">194.50<span class="glyphicon glyphicon-arrow-up"></span></div>
+            </div>
+            <div class="trend-container-bottom">
+                  <div class="example-subtitle">
+                      You Change
+                  </div>
+              <div class="eo-bottom">110.10%</div>
+            </div>
+            </div>
          </div>
             <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
