@@ -9,29 +9,19 @@ export class GrafikonComponent {
     title = 'Hello World!';
 
 private productList: any[] = [
-  {'security': 'EQ-INTERNATIONAL', 'bid': 49.66, 'ask': 89.78},
-  {'security': 'EQ-INTERNATIONAL', 'bid': 239.66, 'ask': 549.78},
-  {'security': 'EQ-INTERNATIONAL', 'bid': 449.66, 'ask': 100.78},
-  {'security': 'EQ-INTERNATIONAL', 'bid': 12.66, 'ask': 89.78},
-  {'security': 'EQ-INTERNATIONAL', 'bid': 49.66, 'ask': 89.78}
+  {'security': 'EQ-INTERNATIONAL', 'bid': 3.907, 'ask': 4.743},
+  {'security': 'EQ-INTERNATIONAL', 'bid': 7.943, 'ask': 7.295},
+  {'security': 'EQ-INTERNATIONAL', 'bid': 7.848, 'ask': 7.175},
+  {'security': 'EQ-INTERNATIONAL', 'bid': 9.284, 'ask': 6.376},
+  {'security': 'EQ-INTERNATIONAL', 'bid': 9.263, 'ask': 8.153}
 ]
 
     private series: any[] = [{
-    name: 'India',
-    data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.801, 3.890, 8.238, 9.552, 6.855]
+    name: 'BID',
+    data: [3.907, 7.943, 7.848, 9.284, 9.263]
   }, {
-    name: 'Russian Federation',
-    data: [4.743, 7.295, 7.175, 6.376, 8.153, 8.535, 5.247, 7.832, 4.3, 4.3]
-  }, {
-    name: 'Germany',
-    data: [0.010, 0.375, 1.161, 0.684, 3.7, 3.269, 1.083, 5.127, 3.690, 2.995]
-  },{
-    name: 'World',
-    data: [1.988, 2.733, 3.994, 3.464, 4.001, 3.939, 1.333, 2.245, 4.339, 2.727]
+    name: 'ASK',
+    data: [4.743, 7.295, 7.175, 6.376, 8.153]
   }];
-  private categories: number[] = [2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011];
-
-    onButtonClick() {
-        this.title = 'Hello from Kendo UI!';
-    }
+  private categories: string[] = ['2017-01-01', '2017-01-02', '2017-01-03', '2017-01-04', '2017-01-05'];
 }
