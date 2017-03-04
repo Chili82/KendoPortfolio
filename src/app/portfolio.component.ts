@@ -11,20 +11,26 @@ export class PortfolioComponent {
 
     selectedRow: Number;
     items: Portfolio[];
-
+    public dataSpark: any[] = [
+        936, 968, 1025, 999, 998, 1014, 1017, 1010, 1010, 1007
+    ];
     inputName = '';
     y: number;
 
-    secyrity: string;
+    security: string;
     isin: any;
+    livePrice: any;
     constructor() {
         this.items = productList;
+        this.livePrice = 198.08;
+        this.security = "Google";
    };
 
    setClickedRow = function(index: any, red: Portfolio){
             this.selectedRow = index;
             this.isin = red.ISIN;
             this.security = red.security;
+            this.livePrice = red.livePrice;
         };
 
     computeValue(x: any, y: any) {

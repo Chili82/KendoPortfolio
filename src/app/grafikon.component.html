@@ -4,8 +4,7 @@
     <div class='panel-heading'>Portfolio Graph</div>
     <div class='panel-body'>
 <div class="graphPanel"> 
-     <kendo-chart [categoryAxis]="{ categories: categories }">
-            <kendo-chart-title text="Gross domestic product growth /GDP annual %/"></kendo-chart-title>
+     <kendo-chart [categoryAxis]="{ categories: categories }" style="height: 250px">
             <kendo-chart-legend position="bottom" orientation="horizontal"></kendo-chart-legend>
             <kendo-chart-tooltip format="{0}%"></kendo-chart-tooltip>
             <kendo-chart-series>
@@ -17,9 +16,22 @@
 </div>
     <div style="width:100%;clear:both">
     <kendo-tabstrip>
-        <kendo-tabstrip-tab [title]="'Tab 1 Title'" [selected]="true">
+        <kendo-tabstrip-tab [title]="'EQ-INTERNATIONAL'" [selected]="true">
           <template kendoTabContent>
-       <p>Tab 1 Contents</p>
+        <table class="table table-bordered table-condensed ">
+            <thead>
+               <th>Security</th>
+               <th>BID</th>
+               <th>ASK</th>
+            </thead>
+            <tbody>
+               <tr *ngFor="let item of productList;" >
+                  <td>{{item.security}}</td>
+                  <td>{{item.bid}}</td>
+                  <td>{{item.ask}}</td>
+               </tr>
+            </tbody>
+         </table>
           </template>
         </kendo-tabstrip-tab>
         <kendo-tabstrip-tab [title]="'Tab 2 Title'">

@@ -37,10 +37,10 @@
          <div class="rightPanel">
             <div class="stat">
               <div class="example-subtitle">
-                  Eq-Nexanas Stock Price
+                  {{security}} Stock Price
                   <span class="metric">US dollars</span>
               </div>
-              <div class="eo-closing">198.08</div>
+              <div class="eo-closing">{{livePrice}}</div>
             </div>
             <div class="cmp-trend">
                <div class="trend-container">
@@ -60,6 +60,10 @@
                       You Change
                   </div>
               <div class="eo-bottom">110.10%</div>
+            </div>
+            <div class="spark">
+              <kendo-sparkline [data]="dataSpark" type="area" style="stroke:rgb(12,34,31)">
+            </kendo-sparkline>
             </div>
             </div>
          </div>

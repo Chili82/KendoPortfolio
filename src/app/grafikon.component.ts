@@ -8,6 +8,14 @@ import { Component } from '@angular/core';
 export class GrafikonComponent {
     title = 'Hello World!';
 
+private productList: Portfolio[] = [
+  {"security": "EQ-INTERNATIONAL", "bid":49.66,"ask":89.78},
+  {"security": "EQ-INTERNATIONAL","bid":239.66,"ask":549.78}
+  ,{"security": "EQ-INTERNATIONAL", "bid":449.66,"ask":100.78},
+  {"security": "EQ-INTERNATIONAL", "bid":12.66,"ask":89.78},
+  {"security": "EQ-INTERNATIONAL", "bid":49.66,"ask":89.78}
+]
+
     private series: any[] = [{
     name: 'India',
     data: [3.907, 7.943, 7.848, 9.284, 9.263, 9.801, 3.890, 8.238, 9.552, 6.855]

@@ -102,6 +102,10 @@ header {
     color: #454447;
      font-family: 'OpenSans-CondBold', Verdana, sans-serif;
     }
+    .spark{
+      font-family: 'OpenSans-CondBold', Verdana, sans-serif;
+      color: #4da3d5;
+    }
   .rightPanel{
 
     height:300px;
@@ -212,6 +216,10 @@ table {
   border-spacing: 0;
   width: 100% !important;
 }
+
+table  {
+  font-size: 0.9em;
+}
 thead {
     display: table-header-group;
   }
@@ -252,6 +260,7 @@ thead {
 .table-bordered > thead > tr > td {
   border-bottom-width: 2px;
   padding: 4px;
+  
 }
 
 .graphPanel{
