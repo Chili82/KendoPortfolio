@@ -107,7 +107,7 @@ header {
       color: #4da3d5;
     }
   .rightPanel{
-
+width:auto;
     height:300px;
     float: left;
     margin-left: 15px;
@@ -207,9 +207,10 @@ nav a span {
   padding-right: 10px;
 }
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-align: right;
   float: right;
+  width: 100%;
 }
 table {
   border-collapse: collapse;
@@ -236,32 +237,9 @@ thead {
     border: 1px solid #ddd !important;
     padding: 2px;
   }
-  .table-condensed thead > tr > th,
-.table-condensed tbody > tr > th,
-.table-condensed tfoot > tr > th,
-.table-condensed thead > tr > td,
-.table-condensed tbody > tr > td,
-.table-condensed tfoot > tr > td {
-  padding: 5px;
-}
-.table-bordered {
-  border: 1px solid #dddddd;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
-.table-bordered > tfoot > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
-  cursor: pointer;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
-  padding: 4px;
-  
-}
+
+
+
 
 .graphPanel{
 clear: both;

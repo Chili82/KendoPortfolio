@@ -1,15 +1,16 @@
 
-    <div class="panel panel-default" style="float: left">
-    <!-- Default panel contents -->
-    <div class='panel-heading'>Portfolio List
-    <div class="form-group">
+ 
+<div class="row">
+      
+    <div  class="table-responsive col-xs-12  col-md-9"> 
+      <div class="form-group">
+        <div style="float: left;width:30%;text-align: left;padding-top: 5px;font-family: 'OpenSans-CondBold', Verdana, sans-serif;color: #454447">Portfolio List</div>
+        <div style="float: left;width:70%">
          <label><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
          <input placeholder="Search Security"  type="text" (keyup)="FilterBySecurity()"  id="inputName" [(ngModel)]="inputName"/>
-
-   </div>
-   </div>
-    <div class='panel-body'>
-        <table class="table table-bordered table-condensed ">
+        </div>
+    </div>
+        <table class="table table-bordered table-condensed">
             <thead>
                <th>Security</th>
                <th>ISIN</th>
@@ -32,9 +33,9 @@
             </tbody>
          </table>
          </div>
-         </div>
+      
 
-         <div class="rightPanel">
+         <div class="rightPanel col-xs-6 col-md-3">
             <div class="stat">
               <div class="example-subtitle">
                   {{security}} Stock Price
@@ -67,6 +68,7 @@
             </div>
             </div>
          </div>
+</div>
             <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

@@ -11,7 +11,7 @@ import { GrafikonComponent } from './grafikon.component';
 
 // Kendo UI componente
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
-import { TabStripModule } from '@progress/kendo-angular-layout';
+import { LayoutModule } from '@progress/kendo-angular-layout';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 
 import 'hammerjs';
@@ -33,7 +33,7 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     ButtonsModule,
-    TabStripModule,
+    LayoutModule,
     ChartsModule
   ],
   providers: [],
