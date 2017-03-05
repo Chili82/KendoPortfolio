@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { RouterModule, Routes } from '@angular/router';
+import { JsonpModule } from '@angular/http';
+import { StockChartModule } from '@progress/kendo-angular-charts';
+import { StockDataService } from './stock.data.service';
 
 // Meni componente
 import { PortfolioComponent } from './portfolio.component';
@@ -14,6 +17,7 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { LayoutModule } from '@progress/kendo-angular-layout';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 
+import 'rxjs/add/operator/map';
 import 'hammerjs';
 
 const routes: Routes = [
@@ -34,9 +38,10 @@ const routes: Routes = [
     HttpModule,
     ButtonsModule,
     LayoutModule,
-    ChartsModule
+    ChartsModule,
+    JsonpModule, StockChartModule
   ],
-  providers: [],
+  providers: [StockDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -71,6 +71,24 @@
             </div>
          </div>
 </div>
+<div class="row">
+  <div class="col-xs-12  col-md-9">
+    <kendo-stockchart title="{{security}}">
+              <kendo-chart-series>
+                <kendo-chart-series-item type="candlestick" [data]="data" openField="Open" closeField="Close" lowField="Low" highField="High" categoryField="Date">
+                </kendo-chart-series-item>
+             </kendo-chart-series>
+            <kendo-chart-navigator>
+             <kendo-chart-navigator-select [from]="from" [to]="to">
+             </kendo-chart-navigator-select>
+              <kendo-chart-navigator-series>
+                <kendo-chart-navigator-series-item type="area" [data]="data" field="Close" categoryField="Date">
+                </kendo-chart-navigator-series-item>
+             </kendo-chart-navigator-series>
+            </kendo-chart-navigator>
+        </kendo-stockchart>
+  </div>
+</div>
             <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Portfolio} from './portfolio';
 import {productList} from './portfolio.service';
+import { StockDataService } from './stock.data.service';
 
 
 @Component({
@@ -20,10 +21,18 @@ export class PortfolioComponent {
     security: string;
     isin: any;
     livePrice: any;
-    constructor() {
+    public data: any[] = [];
+    public from: Date = new Date('2009/02/05');
+    public to: Date = new Date('2011/10/07');
+
+    constructor(private service: StockDataService) {
         this.items = productList;
         this.livePrice = 198.08;
-        this.security = "Google";
+        this.security = 'Google';
+
+         this.service.get().then((data) => {
+            this.data = data;
+        });
    };
 
    setClickedRow = function(index: any, red: Portfolio){
