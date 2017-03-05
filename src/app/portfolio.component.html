@@ -82,14 +82,14 @@
              <kendo-chart-navigator-select [from]="from" [to]="to">
              </kendo-chart-navigator-select>
               <kendo-chart-navigator-series>
-                <kendo-chart-navigator-series-item type="area" [data]="data" field="Close" categoryField="Date">
+                <kendo-chart-navigator-series-item type="area" [data]="data" field="Close" categoryField="Date" missingValues="missingValues">
                 </kendo-chart-navigator-series-item>
              </kendo-chart-navigator-series>
             </kendo-chart-navigator>
         </kendo-stockchart>
   </div>
 </div>
-            <!-- Modal -->
+       <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
