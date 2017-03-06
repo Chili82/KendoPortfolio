@@ -5,11 +5,14 @@ import { Jsonp, URLSearchParams, RequestOptionsArgs } from '@angular/http';
 export class StockDataService {
     private url = 'https://demos.telerik.com/kendo-ui/service/StockData';
 
-    constructor(private jsonp: Jsonp) {
+    constructor(private jsonp: Jsonp) 
+    {
     }
 
-    public get(filter?: any): Promise<any[]> {
-        return new Promise<any[]>((resolve: Function) => {
+    public get(filter?: any): Promise<any[]> 
+    {
+        return new Promise<any[]>((resolve: Function) => 
+        {
             this.jsonp.get(this.url, this.getOptions(filter))
                 .map(res => res.json())
                 .subscribe(result => resolve(result));
