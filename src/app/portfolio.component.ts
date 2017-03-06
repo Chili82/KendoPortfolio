@@ -9,15 +9,15 @@ import { StockDataService } from './stock.data.service';
 })
 
 export class PortfolioComponent {
-
     selectedRow: Number;
     items: Portfolio[];
     public dataSpark: any[] = [
         936, 968, 1025, 999, 998, 1014, 1017, 1010, 1010, 1007
     ];
+
     inputName = '';
     y: number;
- 
+
     security: string;
     isin: any;
     livePrice: any;
@@ -29,7 +29,6 @@ export class PortfolioComponent {
         this.items = productList;
         this.livePrice = 198.08;
         this.security = 'Google';
-
          this.service.get().then((data) => {
             this.data = data;
         });
@@ -43,7 +42,7 @@ export class PortfolioComponent {
         };
 
     computeValue(x: any, y: any) {
-    var z = x * y;
+    const z = x * y;
     return z.toFixed(3);
     }
 
@@ -56,14 +55,16 @@ computePnl(x: any, y: any, z: any) {
 
     FilterBySecurity() {
       this.items = [];
-
-      if (this.inputName != '') {
-            productList.forEach(element => {
+      if (this.inputName !== '') {
+            productList.forEach(element =>
+            {
                 if (element.security.toUpperCase().indexOf(this.inputName.toUpperCase()) >= 0) {
                   this.items.push(element);
                }
             });
-      }else {
+      }
+      else
+      {
          this.items = productList;
       }
    }
