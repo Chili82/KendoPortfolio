@@ -219,7 +219,7 @@ table {
 }
 
 table  {
-  font-size: 1vw;
+  font-size: 0.9em;
 }
 thead {
     display: table-header-group;
