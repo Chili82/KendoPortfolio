@@ -7,7 +7,7 @@ import '../../node_modules/@progress/kendo-theme-default/dist/all.css';
   styleUrls: ['../../node_modules/@progress/kendo-theme-default/dist/all.css']
 })
 export class AppComponent {
-  title = 'Hello!';
+  title = 'Hello!'; 
 
 
 }
