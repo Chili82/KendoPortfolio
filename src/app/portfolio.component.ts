@@ -35,9 +35,6 @@ export class PortfolioComponent {
         });
    };
 
-   test(usForm: any){
-console.log(usForm.isin);
-   }
    setClickedRow = function(index: any, red: Portfolio){
             this.selectedRow = index;
             this.isin = red.ISIN;
