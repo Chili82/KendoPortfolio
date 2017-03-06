@@ -17,7 +17,7 @@ export class PortfolioComponent {
     ];
     inputName = '';
     y: number;
- 
+
     security: string;
     isin: any;
     livePrice: any;
@@ -35,6 +35,9 @@ export class PortfolioComponent {
         });
    };
 
+   test(usForm: any){
+console.log(usForm.isin);
+   }
    setClickedRow = function(index: any, red: Portfolio){
             this.selectedRow = index;
             this.isin = red.ISIN;
@@ -43,21 +46,21 @@ export class PortfolioComponent {
         };
 
     computeValue(x: any, y: any) {
-    var z = x * y;
+    const z = x * y;
     return z.toFixed(3);
     }
 
 
 
 computePnl(x: any, y: any, z: any) {
-    var t = x * (y - z);
+    const t = x * (y - z);
     return t.toFixed(3);
 };
 
     FilterBySecurity() {
       this.items = [];
 
-      if (this.inputName != '') {
+      if (this.inputName !== '') {
             productList.forEach(element => {
                 if (element.security.toUpperCase().indexOf(this.inputName.toUpperCase()) >= 0) {
                   this.items.push(element);
