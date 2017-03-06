@@ -17,7 +17,7 @@ export class PortfolioComponent {
     ];
     inputName = '';
     y: number;
- 
+
     security: string;
     isin: any;
     livePrice: any;
