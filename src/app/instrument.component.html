@@ -1,14 +1,35 @@
 
-<form  [formGroup]=instrumentForm>
+<form>
 
 <div class="classModalRow">
       <div class="classModalLabel">
       <label for="instrument">Instrument</label>
+      </div> 
+      <div class="classModalInput">
+      <select class="form-control" id="instrument"
+                required
+                [(ngModel)]="model.ISIN" name="instrument" #instrument (change)="updateSecurity(instrument)">
+          <option *ngFor="let inst of instruments" [value]="inst.ISIN">{{inst.security}}</option>
+        </select>
+      </div>
+</div>
+
+<div class="classModalRow">
+      <div class="classModalLabel">
+      <label for="position">Position</label>
       </div>
       <div class="classModalInput">
-        <input type="text" class="form-control" formControlName = "instrument">
+        <input type="text" class="form-control" id="position" required [(ngModel)]="model.position" name="position">
         </div>
 </div>
 
+<div class="classModalRow">
+      <div class="classModalLabel">
+      <label for="livePrice">Price</label>
+      </div>
+      <div class="classModalInput">
+        <input type="text" class="form-control" id="livePrice" required [(ngModel)]="model.livePrice" name="livePrice">
+        </div>
+</div>
 
 </form>

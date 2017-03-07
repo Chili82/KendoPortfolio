@@ -4,9 +4,8 @@
       
     <div  class="table-responsive col-xs-12 col-md-9"> 
       <div class="form-group">
-        <div style="float: left;width:30%;text-align: left;padding-top: 5px;font-family: 'OpenSans-CondBold', Verdana, sans-serif;color: #454447">Portfolio List</div>
+        <div style="float: left;width:30%;text-align: left;padding-top: 5px;font-family: 'OpenSans-CondBold', Verdana, sans-serif;color: #454447">Portfolio List - Add Instrument <span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="modal" data-target="#modalInstrument"></span></div>
         <div style="float: left;width:70%">
-          <span class="glyphicon glyphicon-plus" aria-hidden="true" data-toggle="modal" data-target="#modalInstrument"></span>
          <label><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
          <input placeholder="Search Security"  type="text" (keyup)="FilterBySecurity()"  id="inputName" [(ngModel)]="inputName"/>
         </div>
@@ -99,11 +98,11 @@
         <h4 class="modal-title" id="modalInstrumentLabel">Modal title</h4>
       </div>
       <div class="modal-body">
-        <my-instrument></my-instrument>
+        <my-instrument #instForm></my-instrument>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" (click)="addInstrument(5)">Save changes</button>
+        <button type="submit" class="btn btn-primary" (click)="addInstrument(instForm)">Save changes</button>
       </div>
     </div>
   </div>

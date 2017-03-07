@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 import {Portfolio} from './portfolio';
 import {productList} from './portfolio.service';
 import { StockDataService } from './stock.data.service';
+import { InstrumentComponent } from './instrument.component';
+import { Jsonp } from '@angular/http';
 
 
 @Component({
     templateUrl: './portfolio.component.html',
+
 })
 
 export class PortfolioComponent {
@@ -55,7 +58,10 @@ computePnl(x: any, y: any, z: any) {
 };
 
 addInstrument(forma: any) {
-console.log(5);
+
+productList.push(forma.model);
+forma.model = new Portfolio('', '', null, null, null);
+
 }
     FilterBySecurity() {
       this.items = [];
