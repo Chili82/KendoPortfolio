@@ -7,10 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { JsonpModule } from '@angular/http';
 import { StockChartModule } from '@progress/kendo-angular-charts';
 import { StockDataService } from './stock.data.service';
+import {ReactiveFormsModule} from '@angular/forms';
 
 // Meni componente
 import { PortfolioComponent } from './portfolio.component';
 import { GrafikonComponent } from './grafikon.component';
+
+import {InstrumentComponent} from './instrument.component';
 
 // Kendo UI componente
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
@@ -29,7 +32,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent
-    , PortfolioComponent, GrafikonComponent
+    , PortfolioComponent, GrafikonComponent,  InstrumentComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,7 @@ const routes: Routes = [
     ButtonsModule,
     LayoutModule,
     ChartsModule,
-    JsonpModule, StockChartModule
+    JsonpModule, StockChartModule,ReactiveFormsModule
   ],
   providers: [StockDataService],
   bootstrap: [AppComponent]

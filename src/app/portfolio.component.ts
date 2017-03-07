@@ -54,6 +54,9 @@ computePnl(x: any, y: any, z: any) {
     return t.toFixed(3);
 };
 
+addInstrument(forma: any) {
+console.log(5);
+}
     FilterBySecurity() {
       this.items = [];
 
