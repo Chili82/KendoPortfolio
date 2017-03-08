@@ -21,7 +21,7 @@ export class InstrumentComponent {
 
 updateSecurity(text: any) {
     this.model.security = text.options[text.selectedIndex].text;
-    this.model.ISIN = text.value.trim();
+    //this.model.ISIN = text.value.trim();
   }
 // tslint:disable-next-line:eofline
 }
